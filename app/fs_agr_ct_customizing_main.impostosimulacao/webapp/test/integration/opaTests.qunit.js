@@ -1,15 +1,15 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'fsagrctcustomizingmain/impostosimula/test/integration/FirstJourney',
-		'fsagrctcustomizingmain/impostosimula/test/integration/pages/TaxesSimulationList',
-		'fsagrctcustomizingmain/impostosimula/test/integration/pages/TaxesSimulationObjectPage'
+        'fsagrctcustomizingmain/impostosimulacao/test/integration/FirstJourney',
+		'fsagrctcustomizingmain/impostosimulacao/test/integration/pages/TaxesSimulationList',
+		'fsagrctcustomizingmain/impostosimulacao/test/integration/pages/TaxesSimulationObjectPage'
     ],
     function(JourneyRunner, opaJourney, TaxesSimulationList, TaxesSimulationObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('fsagrctcustomizingmain/impostosimula') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('fsagrctcustomizingmain/impostosimulacao') + '/index.html'
         });
 
        

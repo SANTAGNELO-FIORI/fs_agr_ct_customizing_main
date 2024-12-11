@@ -29,8 +29,8 @@
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
     "watch-fs_agr_ct_customizing_main.esalqreferencia": "cds watch --open fs_agr_ct_customizing_main.esalqreferencia/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-fs_agr_ct_customizing_main.impostosimula": "cds watch --open fs_agr_ct_customizing_main.impostosimula/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-fs_agr_ct_customizing_main.indicesesalq": "cds watch --open fs_agr_ct_customizing_main.indicesesalq/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-fs_agr_ct_customizing_main.indicesesalq": "cds watch --open fs_agr_ct_customizing_main.indicesesalq/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-fs_agr_ct_customizing_main.impostosimulacao": "cds watch --open fs_agr_ct_customizing_main.impostosimulacao/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
@@ -57,7 +57,7 @@
   "lcap": true,
   "sapux": [
     "app/fs_agr_ct_customizing_main.esalqreferencia",
-    "app/fs_agr_ct_customizing_main.impostosimula",
-    "app/fs_agr_ct_customizing_main.indicesesalq"
+    "app/fs_agr_ct_customizing_main.indicesesalq",
+    "app/fs_agr_ct_customizing_main.impostosimulacao"
   ]
 }

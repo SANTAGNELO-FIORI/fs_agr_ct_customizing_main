@@ -1,7 +1,7 @@
 {
   "_version": "1.60.0",
   "sap.app": {
-    "id": "fsagrctcustomizingmain.impostosimula",
+    "id": "fsagrctcustomizingmain.impostosimulacao",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.15.7",
-      "toolsId": "b2e4ac94-1493-4de4-b7b7-315e0a72a7ec"
+      "toolsId": "1139eb63-18f3-4fdb-ab8d-a9e588937fb4"
     },
     "dataSources": {
       "mainService": {
@@ -73,7 +73,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "fsagrctcustomizingmain.impostosimula.i18n.i18n"
+          "bundleName": "fsagrctcustomizingmain.impostosimulacao.i18n.i18n"
         }
       },
       "": {

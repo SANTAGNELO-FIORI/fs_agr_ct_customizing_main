@@ -21,8 +21,8 @@ entity IndicatorReference : cuid {
 @assert.unique: { date: [date] }
 entity TaxesSimulation : cuid {
   date: Date @mandatory;
-  regionOrigem: String(3) @mandatory;
-  regionDestine: String(3) @mandatory;
+  regionOrigem: String(2) @mandatory;
+  regionDestine: String(2) @mandatory;
   material: String(40) @mandatory;
   taxValuePauta: Decimal(10,2);
   Currency: Currency;

@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("fsagrctcustomizingmain.impostosimula.Component", {
+        return Component.extend("fsagrctcustomizingmain.impostosimulacao.Component", {
             metadata: {
                 manifest: "json"
             }

@@ -1,7 +1,7 @@
 {
   "_version": "1.60.0",
   "sap.app": {
-    "id": "fsagrctcustomizingmain.esalqindices",
+    "id": "fsagrctcustomizingmain.indicesesalq",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.15.7",
-      "toolsId": "7acf78f3-f245-40d1-bc6e-de7b23b2ba1e"
+      "toolsId": "68b941de-42c0-45c1-b919-1bba2147871b"
     },
     "dataSources": {
       "mainService": {
@@ -27,8 +27,8 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "fsagrctcustomizingmainesalqind-display": {
-          "semanticObject": "fsagrctcustomizingmainesalqind",
+        "fsagrctcustomizingmainindicese-display": {
+          "semanticObject": "fsagrctcustomizingmainindicese",
           "action": "display",
           "title": "{{flpTitle}}",
           "signature": {
@@ -73,7 +73,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "fsagrctcustomizingmain.esalqindices.i18n.i18n"
+          "bundleName": "fsagrctcustomizingmain.indicesesalq.i18n.i18n"
         }
       },
       "": {

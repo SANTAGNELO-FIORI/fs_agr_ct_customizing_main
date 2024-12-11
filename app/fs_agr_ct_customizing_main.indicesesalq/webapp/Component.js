@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("fsagrctcustomizingmain.esalqindices.Component", {
+        return Component.extend("fsagrctcustomizingmain.indicesesalq.Component", {
             metadata: {
                 manifest: "json"
             }

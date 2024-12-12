@@ -1,5 +1,7 @@
 using { fs_agr_ct_customizing_mainSrv } from '../srv/service.cds';
 
+annotate fs_agr_ct_customizing_mainSrv.Freight with @UI.HeaderInfo: { TypeName: 'teste', TypeNamePlural: 'testando', Title: { Value: ID  } };
+
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.HeaderInfo: { TypeName: 'Indicator Index', TypeNamePlural: 'Indicator Indexes', Title: { Value: dateReferencia } };
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with {
   ID @UI.Hidden @Common.Text: { $value: dateReferencia, ![@UI.TextArrangement]: #TextOnly }

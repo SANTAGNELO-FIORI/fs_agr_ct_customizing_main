@@ -28,7 +28,8 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-fs_agr_ct_customizing_main.fretesimualacao": "cds watch --open fs_agr_ct_customizing_main.fretesimualacao/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-fs_agr_ct_customizing_main.fretesimualacao": "cds watch --open fs_agr_ct_customizing_main.fretesimualacao/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-fs_agr_ct_customizing_main.simulacaoimpostos": "cds watch --open fs_agr_ct_customizing_main.simulacaoimpostos/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
@@ -54,6 +55,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/fs_agr_ct_customizing_main.fretesimualacao"
+    "app/fs_agr_ct_customizing_main.fretesimualacao",
+    "app/fs_agr_ct_customizing_main.simulacaoimpostos"
   ]
 }

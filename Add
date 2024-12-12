@@ -1,0 +1,4 @@
+PlaceOfOrigin,PickUpLocation,Region,Modal,LogisticsCost
+"NYC","1234567890123","USA","TRK",1500.00
+"LAX","9876543210987","USA","AIR",2500.00
+"CHI","1928374650912","USA","SEA",1800.00

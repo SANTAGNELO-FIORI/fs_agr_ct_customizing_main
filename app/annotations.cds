@@ -19,7 +19,7 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with {
 };
 
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.LineItem: [
- ESALQ @title: 'ESALQ';
+ { $Type: 'UI.DataField', Value: ESALQ },
  { $Type: 'UI.DataField', Value: dateReferencia },
  { $Type: 'UI.DataField', Value: week },
  { $Type: 'UI.DataField', Value: grossPrice },

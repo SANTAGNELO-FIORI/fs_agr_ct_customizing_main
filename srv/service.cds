@@ -21,6 +21,10 @@ service fs_agr_ct_customizing_mainSrv
     @odata.draft.enabled
     entity TaxesSimulation as
         projection on my.TaxesSimulation;
+
+    @odata.draft.enabled
+    entity Freight as
+        projection on my.Freight;
 }
 
 annotate fs_agr_ct_customizing_mainSrv with @requires :

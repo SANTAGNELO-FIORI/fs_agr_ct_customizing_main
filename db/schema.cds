@@ -9,13 +9,13 @@ from '@sap/cds/common';
 
 entity IndicatorIndex : cuid
 {
-    ESALQ : String(11)
+    ESALQ : String(11) 
     @mandatory;
     dateReferencia : Date
-        @mandatory;
+    @mandatory;
     week : String(2)
-        @mandatory
-        @Core.Description : 'Semana';
+    @mandatory
+    @Core.Description : 'Semana';
     grossPrice : Decimal(10,2)
         @Core.Description : 'Preço Bruto';
     Currency : Currency;
@@ -23,15 +23,21 @@ entity IndicatorIndex : cuid
         @Core.Description : 'Preço Liquido';
 }
 
+
+/*
 annotate IndicatorIndex with @assert.unique :
 {
-    dateReferencia : [ dateReferencia ],
+    ESALQ : [ ESALQ ]  , 
+    dateReferencia : [ dateReferencia ] , 
+    week : [ week ]  
 };
+*/
 
 entity IndicatorReference : cuid
 {
     ESALQ : String(11)
-    @mandatory;
+    @mandatory
+    @Core.Description : 'ESALQ';
     dateReferencia : Date
         @mandatory
         @Core.Description : 'Data de Referencia';
@@ -44,16 +50,18 @@ entity IndicatorReference : cuid
     
 }
 
+/*
 annotate IndicatorReference with @assert.unique :
 {
-    dateReferencia : [ dateReferencia ],
+    ESALQ : [ ESALQ ]  ,
+    dateReferencia : [ dateReferencia ]
 };
-
+*/
 entity TaxesSimulation : cuid
 {
     date : Date
         @mandatory
-        @Core.Description : 'Data ';
+        @Core.Description : 'Data Validade ';
     regionOrigem : String(2)
         @mandatory
         @Core.Description : 'Região Origem';
@@ -74,7 +82,34 @@ entity TaxesSimulation : cuid
         @Core.Description : 'prodeic';
 }
 
-annotate TaxesSimulation with @assert.unique :
-{
-    date : [ date ],
+
+/*annotate TaxesSimulation with @assert.unique :
+//{
+    date : [ date ], 
+    regionOrigem : [ regionOrigem ], 
+    regionDestine : [ regionDestine ], 
+    material : [ material ]    
 };
+*/
+//@assert.unique.name:[placeOfOrigin, pickUpLocation,region]
+entity Freight : cuid
+{
+    placeOfOrigin : String(3)
+        @mandatory;
+    pickUpLocation : String(13)
+        @mandatory;
+    region : String(3)
+        @mandatory;
+    modal : String(4);
+    logisticsCost : Decimal(10,2);
+}
+/*
+annotate Freight with @assert.unique :
+{
+    dateplaceOfOrigin : [ placeOfOrigin] ,
+    pickUpLocation : [ pickUpLocation] , 
+    region : [ region ]
+    
+    
+};
+*/

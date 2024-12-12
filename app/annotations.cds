@@ -6,6 +6,8 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with {
 };
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.Identification: [{ Value: dateReferencia }];
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with {
+  ESALQ @title: 'ESALQ';
+  dateReferencia @title: 'dateReferencia';
   week @title: 'Week';
   grossPrice @title: 'Gross Price';
   netPrice @title: 'Net Price'
@@ -17,6 +19,8 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with {
 };
 
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.LineItem: [
+ ESALQ @title: 'ESALQ';
+ { $Type: 'UI.DataField', Value: dateReferencia },
  { $Type: 'UI.DataField', Value: week },
  { $Type: 'UI.DataField', Value: grossPrice },
  { $Type: 'UI.DataField', Value: netPrice }
@@ -24,6 +28,8 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.LineItem: [
 
 annotate fs_agr_ct_customizing_mainSrv.IndicatorIndex with @UI.FieldGroup #Main: {
   $Type: 'UI.FieldGroupType', Data: [
+ { $Type: 'UI.DataField', Value: ESALQ},
+ { $Type: 'UI.DataField', Value: dateReferencia },
  { $Type: 'UI.DataField', Value: week },
  { $Type: 'UI.DataField', Value: grossPrice },
  { $Type: 'UI.DataField', Value: netPrice }
@@ -44,6 +50,7 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with {
 };
 annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with @UI.Identification: [{ Value: dateReferencia }];
 annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with {
+  dateReferencia @title: 'dateReference';
   grossPrice @title: 'Gross Price';
   netPrice @title: 'Net Price'
 };
@@ -54,12 +61,15 @@ annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with {
 };
 
 annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with @UI.LineItem: [
+ { $Type: 'UI.DataField', Value: ESALQ},
+ { $Type: 'UI.DataField', Value: dateReferencia},
  { $Type: 'UI.DataField', Value: grossPrice },
  { $Type: 'UI.DataField', Value: netPrice }
 ];
 
 annotate fs_agr_ct_customizing_mainSrv.IndicatorReference with @UI.FieldGroup #Main: {
   $Type: 'UI.FieldGroupType', Data: [
+ { $Type: 'UI.DataField', Value: dateReferencia },
  { $Type: 'UI.DataField', Value: grossPrice },
  { $Type: 'UI.DataField', Value: netPrice }
   ]
